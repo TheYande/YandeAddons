@@ -14,6 +14,11 @@
   ],
   "userstyles": [
     {
+      "url": "hide.css",
+      "matches": ["projects"],
+      "if": { "settings": { "icon": true } }
+    },
+    {
       "url": "userstyle.css",
       "matches": ["projects"]
     }
@@ -31,6 +36,7 @@
       "type": "boolean",
       "default": false
     }
+  ],
   "dynamicEnable": true,
   "dynamicDisable": true,
   "versionAdded": "1.30.0",
