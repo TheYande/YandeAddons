@@ -24,6 +24,13 @@
       "matches": ["projects"]
     }
   ],
+  "settings": [
+    {
+      "name": "Only show icon in tabs",
+      "id": "icon",
+      "type": "boolean",
+      "default": false
+    }
   "dynamicEnable": true,
   "dynamicDisable": true,
   "versionAdded": "1.30.0",
