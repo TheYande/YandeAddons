@@ -1,0 +1,31 @@
+{
+  "name": "Compact editor",
+  "description": "Decreases the size of buttons, input fields, menu bars, and other elements in the editor, making more space for components such as the code workspace, the costume editor, and costume previews, as was the case in Scratch 2.0.",
+  "tags": ["editor", "theme"],
+  "credits": [
+    {
+      "name": "lisa_wolfgang",
+      "link": "https://scratch.mit.edu/users/lisa_wolfgang/"
+    },
+    {
+      "name": "Maximouse",
+      "link": "https://github.com/mxmou/"
+    }
+  ],
+  "userstyles": [
+    {
+      "url": "userstyle.css",
+      "matches": ["projects"]
+    }
+  ],
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["projects"]
+    }
+  ],
+  "dynamicEnable": true,
+  "dynamicDisable": true,
+  "versionAdded": "1.30.0",
+  "enabledByDefault": false
+}
