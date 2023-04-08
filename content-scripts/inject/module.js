@@ -1,5 +1,6 @@
 import runAddonUserscripts from "./run-userscript.js";
 import Localization from "./l10n.js";
+import "/libraries/thirdparty/cs/comlink.js";
 
 window.scratchAddons = {};
 scratchAddons.classNames = { loaded: false };
@@ -29,7 +30,6 @@ scratchAddons.console = {
   warnForAddon: (addonId) => _realConsole.warn.bind(_realConsole, ...consoleOutput(addonId)),
   errorForAddon: (addonId) => _realConsole.error.bind(_realConsole, ...consoleOutput(addonId)),
 };
-window.scratchAddons.traps = Object.create(null);
 
 const pendingPromises = {};
 pendingPromises.msgCount = [];
