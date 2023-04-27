@@ -9,6 +9,19 @@
     {
       "url": "userstyle.css",
       "matches": ["projects"]
+    },
+    {
+      "url": "category.css",
+      "matches": ["projects"],
+      "if": { "settings": { "Category": true } }
+    }
+  ],
+  "settings": [
+    {
+      "name": "Remove Category Label",
+      "id": "Category",
+      "type": "boolean",
+      "default": true
     }
   ],
   "versionAdded": "1.11.0",
