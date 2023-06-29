@@ -26,9 +26,7 @@ if (window.location.href.includes("https://scratch.mit.edu/users/")) {
   observer.observe(targetNode, config);
 
   function replacealllinks() {
-    const highlightedItems = document
-      .querySelector("ul.comments")
-      .querySelectorAll("a");
+    const highlightedItems = document.querySelector("ul.comments").querySelectorAll("a");
 
     highlightedItems.forEach(function (item) {
       if (item.href.includes("https://scratch.mit.edu/projects/")) {
@@ -41,9 +39,7 @@ if (window.location.href.includes("https://scratch.mit.edu/users/")) {
 
     async function replacelinks(item) {
       // Storing response
-      const response = await fetch(
-        `https://api.${item.href.replace("https://", "")}`
-      );
+      const response = await fetch(`https://api.${item.href.replace("https://", "")}`);
 
       // Storing data in form of JSON
       var data = await response.json();
@@ -106,9 +102,7 @@ if (window.location.href.includes("https://scratch.mit.edu/projects/")) {
     observer.observe(targetNode, config);
 
     function replacealllinks() {
-      const highlightedItems = document
-        .querySelector("div.flex-row.comments-list")
-        .querySelectorAll("a");
+      const highlightedItems = document.querySelector("div.flex-row.comments-list").querySelectorAll("a");
 
       highlightedItems.forEach(function (item) {
         if (item.href.includes("https://scratch.mit.edu/projects/")) {
@@ -121,9 +115,7 @@ if (window.location.href.includes("https://scratch.mit.edu/projects/")) {
 
       async function replacelinks(item) {
         // Storing response
-        const response = await fetch(
-          `https://api.${item.href.replace("https://", "")}`
-        );
+        const response = await fetch(`https://api.${item.href.replace("https://", "")}`);
 
         // Storing data in form of JSON
         var data = await response.json();
